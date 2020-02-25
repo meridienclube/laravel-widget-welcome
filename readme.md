@@ -1,10 +1,22 @@
-# Package Vendor Laravel
+# Package Widget Welcome Laravel
 
-Base package for all other laravel packages
+This is a simple but important package as it demonstrates in a practical way how to work with the widgets of the CW Laravel packages.
 
-## layouts
+This package basically shows random messages on the widget on your dashboard.
 
-Include for icon usage the following google library <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+## Requirements
+You must have the following packages installed:
+- confrariaweb/laravel-dashboard
+- confrariaweb/laravel-vendor
+- confrariaweb/laravel-widget
+
+## Install
+```php
+- composer require - confrariaweb/laravel-widget-welcome
+- composer dump-autoload
+- php artisan migrate
+- php artisan db:seed --class="ConfrariaWeb\WidgetWelcome\Databases\Seeds\DatabaseSeeder"
+```
 
 ## License
 

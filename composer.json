@@ -21,7 +21,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ConfrariaWeb\\WidgetWelcome\\": "src"
+      "ConfrariaWeb\\WidgetWelcome\\": "src",
+      "ConfrariaWeb\\WidgetWelcome\\Databases\\Seeds\\": "src/Databases/Seeds"
     }
   },
   "extra": {

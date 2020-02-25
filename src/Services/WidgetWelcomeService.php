@@ -1,6 +1,7 @@
 <?PHP
 namespace ConfrariaWeb\WidgetWelcome\Services;
 
+use Illuminate\Support\Facades\DB;
 use ConfrariaWeb\Widget\Contracts\WidgetServiceContract;
 
 class WidgetWelcomeService implements WidgetServiceContract
@@ -18,7 +19,10 @@ class WidgetWelcomeService implements WidgetServiceContract
 
     public function get()
     {
-        # code...
+        $data['message'] = DB::table('widgets_welcome_messages')
+                ->inRandomOrder()
+                ->first()->message;
+        return $data;
     }
 
 }

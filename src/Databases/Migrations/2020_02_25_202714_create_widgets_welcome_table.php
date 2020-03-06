@@ -10,7 +10,7 @@ class CreateWidgetsWelcomeTable extends Migration
     {
         Schema::create('widgets_welcome_messages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('message');
+            $table->text('message');
             $table->timestamps();
         });
     }
